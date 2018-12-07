@@ -18,7 +18,7 @@
 ## Easiest to use
 `./mailSetup.sh`
 
-## Best for ansible(IaaS)/ One click Installations
+## Best for ansible(IaC)/ One click Installations
 `curl -s https://raw.githubusercontent.com/MuzammilM/scripts/master/mail/mailSetup.sh | bash -s notest gusername gpassword`
 * Installs heirloom-mailx and configures ssmtp.
 
