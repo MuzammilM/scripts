@@ -3,8 +3,8 @@ options=$@
 for argument in $options
   do
     case $argument in
-      --arg1=*)           VAR1=${argument/*=/""} ;;
-      --arg2=*)           VAR2=${argument/*=/""} ;;
+      -a1=*|--arg1=*)           VAR1=${argument/*=/""} ;;
+      -a2=*|--arg2=*)           VAR2=${argument/*=/""} ;;
     esac
 done
 
