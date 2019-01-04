@@ -30,8 +30,8 @@ else
         PASSWORD=$2
 fi
 echo -e "\nInstalling ...."
-sudo apt-get update
-sudo apt-get install ssmtp heirloom-mailx
+sudo apt-get -y update
+sudo apt-get install -y ssmtp heirloom-mailx
 echo -e "mailhub=smtp.gmail.com:465\nFromLineOverride=YES\nUseTLS=YES\nroot=$USERNAME\nAuthUser=$USERNAME\nAuthPass=$PASSWORD" > /etc/ssmtp/ssmtp.conf
 }
 function testmail () {
