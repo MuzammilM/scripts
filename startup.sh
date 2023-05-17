@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 60s
 echo "Waiting"
 export ac_LIFE=$(($LIFE - 5))
